@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color:#070F2B;
+  font-family: Ubuntu;
+}
+
+div.navbar {
+  display: flex;
+  justify-content: flex-end; /* Align to the right side */
+  align-items: center; /* Optional: Align items vertically centered */
+  background-color: #070F2B;
+  padding: 10px 20px; /* Optional: Add padding for better spacing */
+}
+
+div.navbar a {
+  color: white;
+  text-decoration: none; /* Optional: Remove underline from links */
+  margin-left: 10px; /* Optional: Add spacing between links */
+
+  border-radius: 20px;
+  padding: 10px;
+}
+
+div.navbar a:hover {
+  color: rgb(255, 196, 0);
+  background-color: rgb(5, 32, 66);
+}
+.navbar a:active,
+.navbar a:focus
+ {
+
+    color: rgb(255, 196, 0);
+    background-color: rgb(5, 32, 66);
+}
+
+h1 {
+  justify-content: center;
+}
+div.image {
+  display: flex;
+  justify-content: flex-end; /* Align to the right side */
+  animation: slideAndRoll 5s linear infinite;
+}
+@keyframes slideAndRoll {
+    0% {
+      transform: translateX(-100%) rotate(0deg);
+    }
+    50% {
+      transform: translateX(0) rotate(360deg);
+    }
+    100% {
+      transform: translateX(100%) rotate(720deg);
+    }
+  }
+
+div.image img {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  border-radius: 100px;
+  width: 590px;
+  height: 500px;
+}
+
+div.content h1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 65px;
+}
+div.content h2{
+    position: absolute;
+    top:43%;
+    left: 20%;
+    font-size: 40px;
+}
+div.content h3{
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    font-size: 35px;
+}
